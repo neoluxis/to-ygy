@@ -63,8 +63,10 @@ a {
     cursor:pointer;
 }
 .say {
+    font-family: Georgia;
     font-size: large;
     margin-left:5px;
+
 }
 .space {
     margin-right:150px;
