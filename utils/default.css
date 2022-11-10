@@ -31,11 +31,12 @@ a {
 #code {
     display:none;
     font-size:16px;
+    width: 405px;
 }
 #clock-box {
     position:absolute;
     left:60px;
-    top:550px;
+    top:530px;
     font-size:28px;
     display:none;}
 #clock-box a {
@@ -43,7 +44,7 @@ a {
     text-decoration:none;
 }
 #clock {
-    margin-left:48px;
+    margin-left:-14px;
 }
 #clock .digit {
     font-size:64px;
