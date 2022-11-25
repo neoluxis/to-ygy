@@ -160,10 +160,10 @@
         o = typeof define === "function" && !define.amd,
         p = typeof require === "function" && typeof define === "function" && define.amd;
     if (typeof require === "function" && typeof module !== "undefined" && module.exports) module.exports.init = l;
-    else if (o) define("jscex-async-powerpack", ["jscex-async"], function (j, f, h) {
+    else if (o) define("jscex-async-powerpack", ["HeartTree/utils/jscex-async"], function (j, f, h) {
         h.exports.init = l
     });
-    else if (p) define("jscex-async-powerpack", ["jscex-async"],
+    else if (p) define("jscex-async-powerpack", ["HeartTree/utils/jscex-async"],
         function () {
             return {
                 init: l

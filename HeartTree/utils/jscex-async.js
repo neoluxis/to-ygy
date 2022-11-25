@@ -141,18 +141,18 @@
                     module.paths.unshift(__dirname)
                 } catch (e) {}
             }
-            require("jscex-builderbase").init(b)
+            require("HeartTree/utils/jscex-builderbase").init(b)
         }
         j(b)
     };
-    else if (m) define("jscex-async", ["jscex-builderbase"], function (b, d,
-        e) {
+    else if (m) define("jscex-async", ["HeartTree/utils/jscex-builderbase"], function (b, d,
+                                                                                       e) {
         e.exports.init = function (d) {
             d.modules.builderbase || b("jscex-builderbase").init(d);
             j(d)
         }
     });
-    else if (n) define("jscex-async", ["jscex-builderbase"], function (b) {
+    else if (n) define("jscex-async", ["HeartTree/utils/jscex-builderbase"], function (b) {
         return {
             init: function (d) {
                 d.modules.builderbase || b.init(d);
